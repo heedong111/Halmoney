@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HalMoney</title>
+
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="dist/css/design_main.css">
+</head>
+
+<body>
+<div id="wrapper">
+  <div class="overlay"></div>
+  <!-- Sidebar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+  <form name="dischoice" accept-charset="euckr" target="main" action="search_result.php" method="post">
+    <ul class="nav sidebar-nav">
+      <li class="sidebar-brand"> <a href="#"> HalMoney </a> </li>
+      <li>
+      <div class="input-group">
+      <input type="number" class="form-control" name="cost" placeholder="가격을 입력하세요">
+      <span class="input-group-btn">
+      <button type="submit" class="btn btn-default">검색</button>
+      </span>
+      </div>
+      </li>
+      <div class="row">
+    <input type="checkbox" name="category[]" id="checkbox" value="음식점" />
+    <label for="checkbox">음식점</label>
+      </div>
+      </li>
+      <li> 
+      <div class="row">
+    <input type="checkbox" name="category[]" id="checkbox" value="카페" />
+    <label for="checkbox">카페</label>
+      </div>
+      </li>
+      <li> 
+      <div class="row">
+    <input type="checkbox" name="category[]" id="checkbox" value="술" />
+    <label for="checkbox">술</label>
+      </div>
+      </li>
+      <li> 
+      <div class="row">
+    <input type="checkbox" name="category[]" id="checkbox" value="노래방" />
+    <label for="checkbox">노래방</label>
+      </div>
+      </li>
+      <li> 
+      <div class="row">
+    <input type="checkbox" name="category[]" id="checkbox" value="PC방" />
+    <label for="checkbox">PC방</label>
+      </div>
+      </li>
+      <li> 
+      <div class="row">
+    <input type="checkbox" name="ccategory[]" id="checkbox" value="당구장"/>
+    <label for="checkbox">당구장</label>
+      </div>
+  </form>
+  </nav>
+  <!-- /#sidebar-wrapper --> 
+  
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas"> <span class="hamb-top"></span> <span class="hamb-middle"></span> <span class="hamb-bottom"></span> </button>
+
+  </div>
+  <!-- /#page-content-wrapper --> 
+  
+</div>
+<!-- /#wrapper --> 
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script src="dist/js/bootstrap.min.js"></script> 
+<script src="dist/js/js_main.js">
+</script>
+<iframe src="frame.html" allowfullscreen height="100%" width="100%" name="main" bordercolor="#9cc" width="100%" height="100%" frameborder=0 marginwidth=0 marginheight=0></iframe>
+</body>
+</html>

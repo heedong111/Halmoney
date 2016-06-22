@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!-- 위 3개의 메타 태그는 *반드시* head 태그의 처음에 와야합니다; 어떤 다른 콘텐츠들은 반드시 이 태그들 *다음에* 와야 합니다 -->
+    	<!-- 부트스트랩 -->
+    	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="dist/css/design_list.css">
+		<style>
+		footer {
+  			position: fixed;
+  			top: 0;
+  			left: 0;
+  			height: 70px;
+  			background-color: #FFABAB;
+  			width: 100%;
+		}
+		body {
+  			margin-top: 70px;
+  			background-color : #9CC;
+		}
+		</style>
+		</head>
+		<body>
+		<footer><p align="right"><a href="frame.html"><img vspace="20px" src="images\logo.png" height="50%" weight="30%" alt="로고"></a></p></footer>
+	  	<form name="dischoice" accept-charset="euckr" target="_self" action="search_result.php" method="post">
+      	<div class="input-group">
+      		<input type="text" class="form-control" name="cost" placeholder="가격을 입력하세요">
+      		<span class="input-group-btn"><button type="submit" class="btn btn-default">검색</button></span>
+      	</div>
+		  <p align="center"><img src="images/main.png" width="330px" height="280px" vspace="50px"></p>
+  		</form>
+		</body>
+<!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+<script src="dist/js/bootstrap.min.js"></script>
+</html>
